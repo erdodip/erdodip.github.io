@@ -1,0 +1,19 @@
+
+/* Delete grey area on the buttons when is clicked */
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Default design: dark theme */
+body {
+  background-color: #444;
+}
+
+form label {
+  color: #aaa;
+}
+
+.main_title {
+  color: #f8f4e1;
+}
