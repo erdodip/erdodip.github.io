@@ -13,63 +13,77 @@
   <title>RPG Tools</title>
 </head>
 <body>
-<div class="container">
-  <form>
-    <div class="row mt-5">
-      <div class="dice_pool col">
-        <div class="input-group">
-          <span class="input-group-text" id="label_dice_type">Dice</span>
-          <!-- <input type="text" name="dice_type" id="dice_type" class="form-control" placeholder="6" value="6"> -->
-          <select class="form-select" id="dice_type">
-            <option value="6" selected>6</option>
-            <option value="4">4</option>
-            <option value="8">8</option>
-            <option value="10">10</option>
-            <option value="12">12</option>
-            <option value="20">20</option>
-            <option value="100">100</option>
-          </select>
-          <span class="input-group-text">+/-</span>
-          <input type="number" name="modifier" id="modifier" class="form-control" placeholder="0" value="0"><br>
-          <span class="input-group-text">x</span>
-          <input type="number" name="number" id="number" class="form-control" placeholder="1" value="1"><br>
-          <button class="btn btn-secondary" type="button" id="btn-roll">Roll</button>
-        </div>
-        <div id="info_box_1" class="form-text">
-          Dice: type of dice can be 4, 6, 8, 10, 12, 20, 100<br>
-          +/-: result modifier. minimum number of a result is 0. <br>
-          x: number of dice.
-        </div>
-      </div>
-      <div class="dice_box col">
-        <div class="input-group">
-          <span class="input-group-text">Result</span>
-          <input type="text" name="result_box_1" id="result_box_1" class="result_box_1 form-control" placeholder="" value="">
-        </div>
-        <div id="result_info_box_1" class="form-text"></div>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="dice_pool col">
-        <div class="input-group">
-          <span class="input-group-text" id="label_coin_type">Coin</span>
-          <span class="input-group-text">x</span>
-          <input type="number" name="coin_number" id="coin_number" class="form-control" placeholder="1" value="1"><br>
-          <button class="btn btn-secondary" type="button" id="btn-flip">Flip</button>
-        </div>
-      </div>
-      <div class="dice_box col">
-        <div class="input-group">
-          <span class="input-group-text">Result</span>
-          <input type="text" name="result_box" id="result_box_2" class="result_box_2 form-control" placeholder="" value="">
-        </div>
-        <div id="result_info_box_2" class="form-text">
-          Head: O, Tail: X
+  <div class="container mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-10"></div>
+        <div class="col"></div>
+        <div class="col">
+          <div class="btn-group justify-content-end" role="group" aria-label="Themes">
+            <button type="button" id="btn_dark" class="btn btn-sm btn-secondary">Dark</button>
+            <button type="button" id="btn_light" class="btn btn-sm btn-dark">Light</button>
+          </div>
         </div>
       </div>
     </div>
-  </form>
-</div>
+  </div>
+  <div class="container">
+    <form>
+      <div class="row mt-5">
+        <div class="dice_pool col">
+          <div class="input-group">
+            <span class="input-group-text" id="label_dice_type">Dice</span>
+            <!-- <input type="text" name="dice_type" id="dice_type" class="form-control" placeholder="6" value="6"> -->
+            <select class="form-select" id="dice_type">
+              <option value="6" selected>6</option>
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+              <option value="20">20</option>
+              <option value="100">100</option>
+            </select>
+            <span class="input-group-text">+/-</span>
+            <input type="number" name="modifier" id="modifier" class="form-control" placeholder="0" value="0"><br>
+            <span class="input-group-text">x</span>
+            <input type="number" name="number" id="number" class="form-control" placeholder="1" value="1"><br>
+            <button class="btn btn-secondary" type="button" id="btn-roll">Roll</button>
+          </div>
+          <div id="info_box_1" class="form-text">
+            Dice: type of dice can be 4, 6, 8, 10, 12, 20, 100<br>
+            +/-: result modifier. minimum number of a result is 0. <br>
+            x: number of dice.
+          </div>
+        </div>
+        <div class="dice_box col">
+          <div class="input-group">
+            <span class="input-group-text">Result</span>
+            <input type="text" name="result_box_1" id="result_box_1" class="result_box_1 form-control" placeholder="" value="">
+          </div>
+          <div id="result_info_box_1" class="form-text"></div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="dice_pool col">
+          <div class="input-group">
+            <span class="input-group-text" id="label_coin_type">Coin</span>
+            <span class="input-group-text">x</span>
+            <input type="number" name="coin_number" id="coin_number" class="form-control" placeholder="1" value="1"><br>
+            <button class="btn btn-secondary" type="button" id="btn-flip">Flip</button>
+          </div>
+        </div>
+        <div class="dice_box col">
+          <div class="input-group">
+            <span class="input-group-text">Result</span>
+            <input type="text" name="result_box" id="result_box_2" class="result_box_2 form-control" placeholder="" value="">
+          </div>
+          <div id="result_info_box_2" class="form-text">
+            Head: O, Tail: X
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 
   <script src="main.js"></script>
   <script src="theme.js"></script>
