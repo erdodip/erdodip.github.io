@@ -5,9 +5,12 @@ function dark_theme() {
 
   // Change background color
   document.querySelector('body').style.backgroundColor='#444';
+  // Change desing on main_title
+  document.querySelector('.main_title').style.color='#f8f4e1'; // Not work after  // Change design on links rows, Why?!
 
   // Change design on links
   document.querySelector('#link_rpg_tools').setAttribute('class','btn btn-dark');
+
 }
 
 function light_theme() {
@@ -17,9 +20,12 @@ function light_theme() {
 
   // Change background color
   document.querySelector('body').style.backgroundColor='#f8f4e1';
+  // Change desing on main_title
+  document.querySelector('.main_title').style.color='#444';
 
   // Change design on links
   document.querySelector('#link_rpg_tools').setAttribute('class','btn btn-outline-dark');
+
 }
 
 document.querySelector('#btn_dark').addEventListener('click',dark_theme);
