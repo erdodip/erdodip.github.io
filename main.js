@@ -10,7 +10,7 @@ function dark_theme() {
   document.querySelector('#link_rpg_tools').setAttribute('class','btn btn-dark');
 }
 
-function ligth_theme() {
+function light_theme() {
   // Change theme color of buttons
   document.querySelector('#btn_dark').setAttribute('class','btn btn-sm btn-outline-dark');
   document.querySelector('#btn_light').setAttribute('class','btn btn-sm btn-secondary');
@@ -23,4 +23,4 @@ function ligth_theme() {
 }
 
 document.querySelector('#btn_dark').addEventListener('click',dark_theme);
-document.querySelector('#btn_light').addEventListener('click',ligth_theme);
+document.querySelector('#btn_light').addEventListener('click',light_theme);
