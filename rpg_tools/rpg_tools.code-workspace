@@ -7,5 +7,7 @@
 			"path": "..\\..\\erdodip.github.io"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "erdodip.github.io"
+	}
 }
