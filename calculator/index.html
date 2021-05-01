@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Default styles -->
+    <link rel="stylesheet" href="default.css" />
+
+    <!-- Theme styles -->
+    <link rel="stylesheet" href="theme.css" />
+
+    <title>A simple calculator</title>
+  </head>
+
+  <body>
+    <!-- Header start-->
+    <div class="container mt-3">
+      <!-- Theme switches section start -->
+        <div class="row">
+          <!-- For right align -->
+          <div class="col-10"></div>
+          <div class="col"></div>
+          <!-- Right aligned buttons -->
+          <div class="col">
+            <div
+              class="btn-group justify-content-end"
+              role="group"
+              aria-label="Themes"
+            >
+              <button
+                type="button"
+                id="btn_dark"
+                class="btn btn-sm btn-secondary"
+              >
+                Dark
+              </button>
+              <button type="button" id="btn_light" class="btn btn-sm btn-dark">
+                Light
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Theme switches section end -->
+    </div>
+    <!-- Header end -->
+
+    <!-- Content start -->
+    <div class="container mt-5 section">
+    </div>
+    <!-- Content end -->
+    
+    <!-- Footer start-->
+    <div class="container mt-5 copyright">
+      <p>&copy; 2021 My fun sites. All rights *not* reserved.</p>
+    </div>
+    <!-- Footer end -->
+
+    <!-- Main functions -->
+    <script src="main.js"></script>
+    <!-- Theme functions -->
+    <script src="theme.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script 
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    -->
+  </body>
+</html>
