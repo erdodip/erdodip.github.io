@@ -57,7 +57,7 @@ div > .calculator {
   /* repeat notation for easier reading */
   grid-template-columns: repeat(4, 1fr);
   /* Clean line around each button and line background color */
-  grid-gap: 1px;
+  grid-gap: 0;
   background: rgba(255, 255, 255, 0.75);
 }
 
@@ -96,11 +96,11 @@ div > .calculator {
   grid-row: 2 / span 4;
 
   /* Background color design*/
-  background: rgba(226, 222, 3, 0.3);
+  background: rgba(255, 255, 255, 0.918);
 }
 
 .calculator-key-enter:active {
-  background: hsla(49, 83%, 45%, 0.555);
+  background: hsla(0, 0%, 100%, 0.555);
 }
 
 .calculator-key-operator {
