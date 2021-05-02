@@ -57,8 +57,8 @@ div > .calculator {
   /* repeat notation for easier reading */
   grid-template-columns: repeat(4, 1fr);
   /* Clean line around each button and line background color */
-  grid-gap: 0;
-  background: rgba(255, 255, 255, 0.75);
+  grid-gap: 0px;
+  background: hsl(210, 25%, 95%);
 }
 
 
@@ -76,12 +76,6 @@ div > .calculator {
   padding-inline-end: 1.25rem;
   /* Readable size */
   font-size: 1.5rem;
-
-  /* Playful design */
-  /* border-radius: 40px;
-  inline-size: 60px;
-  block-size: 60px;
-  font-size: 1.5rem; */
 }
 
 .calculator-key:active, .calculator-key:focus {
@@ -96,11 +90,11 @@ div > .calculator {
   grid-row: 2 / span 4;
 
   /* Background color design*/
-  background: rgba(255, 255, 255, 0.918);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .calculator-key-enter:active {
-  background: hsla(0, 0%, 100%, 0.555);
+  background: hsla(0, 0%, 100%, 0.5);
 }
 
 .calculator-key-operator {
