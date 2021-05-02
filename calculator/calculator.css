@@ -63,8 +63,9 @@ div > .calculator {
 
 
 .calculator-key {
-  /* Design */
-  border: 0;
+  /* Default design */
+  border: none;
+  background: hsl(210, 25%, 95%);
   /* Logical Property for padding-top */
   padding-block-start: 0.5rem; 
   /* Logical Property for padding-bottom */
@@ -75,6 +76,17 @@ div > .calculator {
   padding-inline-end: 1.25rem;
   /* Readable size */
   font-size: 1.5rem;
+
+  /* Playful design */
+  /* border-radius: 40px;
+  inline-size: 60px;
+  block-size: 60px;
+  font-size: 1.5rem; */
+}
+
+.calculator-key:active, .calculator-key:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
 }
 
 .calculator-key-enter {
@@ -84,10 +96,18 @@ div > .calculator {
   grid-row: 2 / span 4;
 
   /* Background color design*/
-  background: rgba(226, 222, 3, 0.308);
+  background: rgba(226, 222, 3, 0.3);
 }
 
-.calculator-key-operators {
+.calculator-key-enter:active {
+  background: hsla(49, 83%, 45%, 0.555);
+}
+
+.calculator-key-operator {
   /* Let’s differentiate the operators from the numbers */
-  background: rgba(14, 33, 119, 0.418);
+  background: rgba(14, 33, 119, 0.15);
+}
+
+.calculator-key-operator:active {
+  background: hsl(208, 24%, 80%);
 }
