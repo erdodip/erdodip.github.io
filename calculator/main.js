@@ -2,7 +2,7 @@
 function write_on_lcd(key) {
   // Delete zero if only zero there
   let content = document.querySelector(".calculator-lcd").innerHTML
-  console.log(content, typeof(content))
+  // console.log(content, typeof(content)) // For testing
   // Refactor: for easier read, better way?
   // Need `===` because 0. == 0 is equal
   // Need `"0"`, without quotation mark, zero is always there
