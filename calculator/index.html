@@ -69,23 +69,23 @@
       <div class="container calculator">
         <div class="calculator-lcd">0</div>
         <div class="calculator-keys">
-          <button class="calculator-key calculator-key-operator">+</button>
-          <button class="calculator-key calculator-key-operator">-</button>
-          <button class="calculator-key calculator-key-operator">&times;</button>
-          <button class="calculator-key calculator-key-operator">÷</button>
-          <button class="calculator-key">7</button>
-          <button class="calculator-key">8</button>
-          <button class="calculator-key">9</button>
-          <button class="calculator-key">4</button>
-          <button class="calculator-key">5</button>
-          <button class="calculator-key">6</button>
-          <button class="calculator-key">1</button>
-          <button class="calculator-key">2</button>
-          <button class="calculator-key">3</button>
-          <button class="calculator-key">0</button>
-          <button class="calculator-key">.</button>
-          <button class="calculator-key">AC</button>
-          <button class="calculator-key calculator-key-enter">=</button>
+          <button class="calculator-key calculator-key-operator" onclick="write_on_lcd('+')">+</button>
+          <button class="calculator-key calculator-key-operator" onclick="write_on_lcd('-')">-</button>
+          <button class="calculator-key calculator-key-operator" onclick="write_on_lcd('*')">&times;</button>
+          <button class="calculator-key calculator-key-operator" onclick="write_on_lcd('/')">÷</button>
+          <button class="calculator-key" onclick="write_on_lcd(7)">7</button>
+          <button class="calculator-key" onclick="write_on_lcd(8)">8</button>
+          <button class="calculator-key" onclick="write_on_lcd(9)">9</button>
+          <button class="calculator-key" onclick="write_on_lcd(4)">4</button>
+          <button class="calculator-key" onclick="write_on_lcd(5)">5</button>
+          <button class="calculator-key" onclick="write_on_lcd(6)">6</button>
+          <button class="calculator-key" onclick="write_on_lcd(1)">1</button>
+          <button class="calculator-key" onclick="write_on_lcd(2)">2</button>
+          <button class="calculator-key" onclick="write_on_lcd(3)">3</button>
+          <button class="calculator-key" onclick="write_on_lcd(0)">0</button>
+          <button class="calculator-key" onclick="write_on_lcd('.')">.</button>
+          <button class="calculator-key" onclick="clear_lcd()">AC</button>
+          <button class="calculator-key calculator-key-enter" onclick="solve()">=</button>
         </div>
       </div>
       <!-- Calculator app end -->
@@ -100,9 +100,6 @@
 
     <!-- Main functions -->
     <script src="main.js"></script>
-    <!-- Theme functions -->
-    <script src="theme.js"></script>
-
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
