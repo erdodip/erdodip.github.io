@@ -1,1 +1,1 @@
-# erdodip.github.io
+[erdodip.github.io]
