@@ -1,10 +1,1 @@
-body {
-  background-color: #444;
-}
-
-/* Delete grey area on the buttons when is clicked */
-.btn:focus,
-.btn:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
+body{background-color:#444}.btn:focus,.btn:active{outline:none!important;box-shadow:none!important}
