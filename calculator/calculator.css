@@ -1,1 +1,102 @@
-div > .calculator{padding:0}.calculator{border-radius:10px;max-inline-size:22rem;box-shadow:0 3px 6px 0 rgba(0,0,0,0.15),0 2px 4px 0 rgba(0,0,0,0.12);overflow:hidden}.calculator-lcd{font-size:3rem;text-align:end;background-color:rgba(0,0,0,0.2);color:rgba(255,255,255,0.85);padding-block-start:.25rem;padding-block-end:.25rem;padding-inline-end:.75rem}.calculator-keys{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:0;background:hsl(210,25%,95%)}.calculator-key{border:none;background:hsl(210,25%,95%);padding-block-start:.5rem;padding-block-end:.5rem;padding-inline-start:1.25rem;padding-inline-end:1.25rem;font-size:1.5rem}.calculator-key:active,.calculator-key:focus{box-shadow:0 0 8px 0 rgba(0,0,0,0.3) inset;outline:none}.calculator-key-enter{grid-column:4 / 5;grid-row:2 / span 4;background:rgba(255,255,255,0.9)}.calculator-key-enter:active{background:hsla(0,0%,100%,0.5)}.calculator-key-operator{background:rgba(14,33,119,0.15)}.calculator-key-operator:active{background:hsl(208,24%,80%)}
+/* Override Bootstrap container styles for calculator */
+div > .calculator {
+	padding: 0;
+}
+
+/* Calculator app styles */
+.calculator {
+  /* Grid */
+  /* Disable: grid cause some padding on top */
+  /* display: grid; */
+  /* Design */
+	border-radius: 10px;
+  /* This is the Logical Property for max-width */
+  /* and has very good browser support */
+	max-inline-size: 22rem;
+  /* Disable: for another solution */
+  /* height: 10rem; */
+  /* Items are positioned in the center of the container */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* Give the calculator some depth off the page */
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  /* Clip the content when the content of an element is */
+  /* too big to fit in the specified area */
+  /* and don't add scrollbar */
+  overflow: hidden;
+}
+
+.calculator-lcd {
+  /* Big big result */
+  font-size: 3rem;
+  /* This is the Logical Property for text-align: right; */
+  /* and has very good browser support. */
+  text-align: end;
+
+  /* Design */
+  background-color:  rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.85);
+
+  /* Logical Property for padding-top */
+  padding-block-start: 0.25rem; 
+  /* Logical Property for padding-bottom */
+  padding-block-end: 0.25rem; 
+  /* Logical Property for padding-right */
+  padding-inline-end: 0.75rem;
+}
+
+.calculator-keys {
+  /* Use grid */
+  display: grid;
+  /* repeat notation for easier reading */
+  grid-template-columns: repeat(4, 1fr);
+  /* Clean line around each button and line background color */
+  grid-gap: 0px;
+  background: hsl(210, 25%, 95%);
+}
+
+
+.calculator-key {
+  /* Default design */
+  border: none;
+  background: hsl(210, 25%, 95%);
+  /* Logical Property for padding-top */
+  padding-block-start: 0.5rem; 
+  /* Logical Property for padding-bottom */
+  padding-block-end: 0.5rem; 
+  /* Logical Property for padding-left */
+  padding-inline-start: 1.25rem; 
+  /* Logical Property for padding-right */
+  padding-inline-end: 1.25rem;
+  /* Readable size */
+  font-size: 1.5rem;
+}
+
+.calculator-key:active, .calculator-key:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+
+.calculator-key-enter {
+  /* Start at column #4 and end at column #5 (the very right edge). */
+  grid-column: 4  / 5;
+  /* Start at row #2 and span 4 rows */
+  grid-row: 2 / span 4;
+
+  /* Background color design*/
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.calculator-key-enter:active {
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.calculator-key-operator {
+  /* Let’s differentiate the operators from the numbers */
+  background: rgba(14, 33, 119, 0.15);
+}
+
+.calculator-key-operator:active {
+  background: hsl(208, 24%, 80%);
+}
